@@ -1,0 +1,12 @@
+include: ['_pages']
+permalink: /blog/:title
+
+gems:
+- jekyll-sitemap
+- jekyll-feed
+
+name: 'Sailaja Pallakonda'
+description: 'My name is Sailaja Pallakonda, I am an Automation Engineer residing in Houston, TX.  I enjoy writing code to test code, watching movies and spending time with my family.'
+url: https://sailajacharan.github.io/
+author: 'Sailaja Pallakonda'
+keywords: 'sailaja pallakonda, automation engineer, blog, resume, portfolio'
