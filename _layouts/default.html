@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap-sailaja-pallakonda.css">
+    {% feed_meta %}
+    <link rel="author" href="https://plus.google.com/u/0/109150663923125690619">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Sailaja Pallakonda{% endif %}">
+    <meta name="twitter:site" content="@spallakonda21">
+    <meta name="twitter:creator" content="@spallakonda21">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | escape }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ page.featured_image | prepend: site.url }}">
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Sailaja Pallakonda{% endif %}">
+    <meta property="og:type" content="{{ page.open_graph_type }}" >
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}" >
     </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="375">
@@ -25,7 +38,7 @@
                     Sailaja Pallakonda
                 </a>
             </div>
-            <div id="zachary-mckinnon-navbar" class="navbar-collapse collapse">
+            <div id="sailaja-pallakonda-navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/resume">Resume</a>
